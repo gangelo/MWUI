@@ -46,6 +46,7 @@ open class MWMarkdownLabel: UILabel, MWMarkdownProtocol {
    override open var text: String? {
       didSet {
          let attributedText = self.getMarkdown()
+         self.text = ""
          self.attributedText = attributedText
       }
    }
