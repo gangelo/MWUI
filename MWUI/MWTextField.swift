@@ -75,6 +75,13 @@ open class MWTextField: UITextField {
       self.onError(error)
    }
    
+   public func setErrorOrClear(with error:String?) {
+      self.clear()
+      if ((error ?? "").trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) != "") {
+         self.setError(error: error!)
+      }
+   }
+   
    fileprivate func setImage(image:UIImage?) {
       if (image == nil) {
          return
