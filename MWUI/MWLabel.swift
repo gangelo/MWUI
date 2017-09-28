@@ -50,21 +50,21 @@ open class MWLabel: UILabel {
    //
    // MARK: - Image functions
    
-   public func setWaiting() {
+   open func setWaiting() {
       self.clear()
    }
    
-   public func setSuccess(message:String = "") {
+   open func setSuccess(message:String = "") {
       self.clear()
       self.text = message
    }
    
-   public func setError(error:String = "") {
+   open func setError(error:String = "") {
       self.clear()
       self.text = error
    }
    
-   public func clear() {
+   open func clear() {
       self.text = ""
    }
    
