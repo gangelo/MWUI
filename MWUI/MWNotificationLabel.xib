@@ -12,26 +12,27 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MWNotificationLabel" customModule="MWUI" customModuleProvider="target">
             <connections>
                 <outlet property="leftImageView" destination="TyE-Uc-Pos" id="KjP-2J-BBb"/>
+                <outlet property="notificationLabel" destination="tJK-MG-YIb" id="j6t-K3-zT0"/>
                 <outlet property="rightImageView" destination="FDk-e9-kAs" id="owi-ls-y6L"/>
                 <outlet property="stackView" destination="0zt-gd-9CC" id="R31-rW-bBm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="489" height="82"/>
+            <rect key="frame" x="0.0" y="0.0" width="482" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="0zt-gd-9CC">
-                    <rect key="frame" x="0.0" y="0.0" width="489" height="82"/>
+                <stackView opaque="NO" contentMode="left" translatesAutoresizingMaskIntoConstraints="NO" id="0zt-gd-9CC">
+                    <rect key="frame" x="0.0" y="0.0" width="482" height="44"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZV-AS-t53">
-                            <rect key="frame" x="0.0" y="0.0" width="24" height="82"/>
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="44"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TyE-Uc-Pos">
-                                    <rect key="frame" x="0.0" y="29" width="24" height="24"/>
+                                    <rect key="frame" x="4" y="14" width="16.5" height="16"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="24" id="RMb-BN-WFD"/>
-                                        <constraint firstAttribute="height" constant="24" id="XPa-Cj-Gyf"/>
+                                        <constraint firstAttribute="width" constant="16" id="RMb-BN-WFD"/>
+                                        <constraint firstAttribute="height" constant="16" id="XPa-Cj-Gyf"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
@@ -42,21 +43,20 @@
                                 <constraint firstAttribute="width" constant="24" id="XSb-kU-3ST"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJK-MG-YIb">
-                            <rect key="frame" x="31" y="0.0" width="427" height="82"/>
-                            <string key="text">Check your email inbox! You need to confirm your email address before logging in to Accumoo. Once you've confirmed your email address click the Log in button to start using Accumoo!</string>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJK-MG-YIb">
+                            <rect key="frame" x="24" y="0.0" width="434" height="44"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC0-8y-5Bg">
-                            <rect key="frame" x="465" y="0.0" width="24" height="82"/>
+                            <rect key="frame" x="458" y="0.0" width="24" height="44"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDk-e9-kAs">
-                                    <rect key="frame" x="0.0" y="29" width="24" height="24"/>
+                                    <rect key="frame" x="4" y="14" width="16" height="16"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="24" id="Zfo-G1-o0D"/>
-                                        <constraint firstAttribute="height" constant="24" id="Zqv-MH-edi"/>
+                                        <constraint firstAttribute="width" constant="16" id="Zfo-G1-o0D"/>
+                                        <constraint firstAttribute="height" constant="16" id="Zqv-MH-edi"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
@@ -82,7 +82,7 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="45.5" y="-327"/>
+            <point key="canvasLocation" x="49" y="-346"/>
         </view>
     </objects>
 </document>
