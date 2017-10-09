@@ -51,4 +51,11 @@ open class MWNotificationLabel: UIView {
          return nil
       }
    }
+   
+   override open func sizeToFit() {
+      super.sizeToFit()
+      
+      self.notificationLabel.sizeToFit()
+      self.stackView.sizeToFit()
+   }
 }
