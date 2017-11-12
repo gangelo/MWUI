@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="17B48" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MWRadioButton" customModule="MWUI" customModuleProvider="target">
+            <connections>
+                <outlet property="radioButton" destination="UPW-zF-0qf" id="rlz-he-XL5"/>
+                <outlet property="radioButtonLabel" destination="ZI0-iX-pRh" id="2WR-2U-0Sl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2aQ-P0-u0e">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="28"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPW-zF-0qf" customClass="MWRadioButtonButton" customModule="MWUI" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="aa5-Ez-6Xk"/>
+                        <constraint firstAttribute="height" constant="24" id="gfV-6I-emp"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZI0-iX-pRh">
+                    <rect key="frame" x="32" y="4" width="218" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZI0-iX-pRh" firstAttribute="centerY" secondItem="2aQ-P0-u0e" secondAttribute="centerY" id="6dP-ig-RTb"/>
+                <constraint firstAttribute="trailing" secondItem="ZI0-iX-pRh" secondAttribute="trailing" id="KQa-Rx-BzJ"/>
+                <constraint firstItem="ZI0-iX-pRh" firstAttribute="leading" secondItem="UPW-zF-0qf" secondAttribute="trailing" constant="8" id="NeX-IY-5dp"/>
+                <constraint firstItem="UPW-zF-0qf" firstAttribute="centerY" secondItem="2aQ-P0-u0e" secondAttribute="centerY" id="lkl-pi-4jN"/>
+                <constraint firstItem="UPW-zF-0qf" firstAttribute="leading" secondItem="2aQ-P0-u0e" secondAttribute="leading" id="w7i-QG-bKx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-63.5" y="-242"/>
+        </view>
+    </objects>
+</document>
