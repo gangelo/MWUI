@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class MWLinkButton: UIButton {
+open class MWLinkButton: UIButton {
 
    override init(frame: CGRect) {
       super.init(frame: frame)
@@ -17,7 +17,7 @@ class MWLinkButton: UIButton {
       self.initialize()
    }
    
-   required init(coder aDecoder: NSCoder) {
+   required public init(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)!
       
       self.initialize()

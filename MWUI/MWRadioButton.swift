@@ -9,33 +9,35 @@
 import UIKit
 
 @IBDesignable
-class MWRadioButton: UIView {
+open class MWRadioButton: UIView {
    //
    // MARK: Properties
    
-   @IBOutlet weak var radioButton: MWRadioButtonButton!
-   @IBOutlet weak var radioButtonLabel: UILabel!
+   @IBOutlet public weak var radioButton: MWRadioButtonButton!
+   @IBOutlet public weak var radioButtonLabel: UILabel!
+    
+    fileprivate var view: UIView!
+    open let nibName: String = "MWRadioButton"
    
    //
    // MARK: Initialization
-   
-   override func awakeFromNib() {
-   }
-   
+  
    override public init(frame: CGRect) {
       super.init(frame: frame)
-      initialization()
+      self.initialization()
    }
    
    required public init(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)!
-      initialization()
+      self.initialization()
+   }
+   
+   override open func awakeFromNib() {
+      super.awakeFromNib()
    }
    
    open func initialization() {
-      guard let view = self.loadViewFromNib() else {
-         fatalError("Error loading xib \(self.nibName)")
-      }
+      view = self.loadViewFromNib()
       
       view.frame = bounds
       view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
@@ -53,17 +55,18 @@ class MWRadioButton: UIView {
       }
    }
    
-   private var nibName:String {
-      get {
-         return String(describing: type(of: self))
-      }
+   open var text:String? = "" {
+      didSet { self.radioButtonLabel.text = self.text }
+   }
+   
+   open var isSelected:Bool = false {
+      didSet { self.radioButton.isSelected = self.isSelected }
    }
    
    override open func sizeToFit() {
       super.sizeToFit()
       
-      //self.notificationLabel.sizeToFit()
-      //self.stackView.sizeToFit()
+      self.radioButtonLabel.sizeToFit()
    }
 
 }

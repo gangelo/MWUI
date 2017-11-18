@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,9 +23,9 @@
 		E430B2351FB5F3F200F21B05 /* MWRadioButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = E430B2341FB5F3F200F21B05 /* MWRadioButton.xib */; };
 		E430B2371FB5F77000F21B05 /* MWRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E430B2361FB5F77000F21B05 /* MWRadioButton.swift */; };
 		E44240DF1F62E57B00AD9EC6 /* MWUI.h in Headers */ = {isa = PBXBuildFile; fileRef = E44240DD1F62E57B00AD9EC6 /* MWUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E44241151F62F30D00AD9EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44241141F62F30D00AD9EC6 /* Assets.xcassets */; };
 		E48FE9FD1F8C5A0400C44A42 /* MWBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9FC1F8C5A0400C44A42 /* MWBorderedView.swift */; };
 		E4A69D1E1F6F5107004F958D /* MWMarkdownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A69D1D1F6F5107004F958D /* MWMarkdownProtocol.swift */; };
+		E4C3BB071FBB55E600F16409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C3BB061FBB55E600F16409 /* Assets.xcassets */; };
 		E4FAEF4F1F6B4428006F88BF /* MWLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FAEF4E1F6B4428006F88BF /* MWLinkButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,9 +48,9 @@
 		E44240DA1F62E57B00AD9EC6 /* MWUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44240DD1F62E57B00AD9EC6 /* MWUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWUI.h; sourceTree = "<group>"; };
 		E44240DE1F62E57B00AD9EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E44241141F62F30D00AD9EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E48FE9FC1F8C5A0400C44A42 /* MWBorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWBorderedView.swift; sourceTree = "<group>"; };
 		E4A69D1D1F6F5107004F958D /* MWMarkdownProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWMarkdownProtocol.swift; sourceTree = "<group>"; };
+		E4C3BB061FBB55E600F16409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4FAEF4E1F6B4428006F88BF /* MWLinkButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWLinkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,7 +122,7 @@
 		E44240D01F62E57B00AD9EC6 = {
 			isa = PBXGroup;
 			children = (
-				E44241141F62F30D00AD9EC6 /* Assets.xcassets */,
+				E4C3BB061FBB55E600F16409 /* Assets.xcassets */,
 				E44240DC1F62E57B00AD9EC6 /* MWUI */,
 				E44240DB1F62E57B00AD9EC6 /* Products */,
 			);
@@ -199,7 +199,7 @@
 				};
 			};
 			buildConfigurationList = E44240D41F62E57B00AD9EC6 /* Build configuration list for PBXProject "MWUI" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -220,8 +220,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E44241151F62F30D00AD9EC6 /* Assets.xcassets in Resources */,
 				E430B2351FB5F3F200F21B05 /* MWRadioButton.xib in Resources */,
+				E4C3BB071FBB55E600F16409 /* Assets.xcassets in Resources */,
 				E42B98D61F82795A0072CFB6 /* MWNotificationLabel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
