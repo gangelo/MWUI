@@ -113,6 +113,7 @@ open class MWTextField: UITextField {
    public func clear() {
       // Remove the image attached to the textfield
       if let imageView = self._imageView {
+         imageView.removeGestureRecognizer(UITapGestureRecognizer())
          imageView.subviews.first?.removeFromSuperview()
       }
       
