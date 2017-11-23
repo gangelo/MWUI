@@ -25,6 +25,7 @@
 		E44240DF1F62E57B00AD9EC6 /* MWUI.h in Headers */ = {isa = PBXBuildFile; fileRef = E44240DD1F62E57B00AD9EC6 /* MWUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E48FE9FD1F8C5A0400C44A42 /* MWBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FE9FC1F8C5A0400C44A42 /* MWBorderedView.swift */; };
 		E4A69D1E1F6F5107004F958D /* MWMarkdownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A69D1D1F6F5107004F958D /* MWMarkdownProtocol.swift */; };
+		E4AF192B1FC5811100129B16 /* MWTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AF192A1FC5811100129B16 /* MWTextView.swift */; };
 		E4C3BB071FBB55E600F16409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C3BB061FBB55E600F16409 /* Assets.xcassets */; };
 		E4FAEF4F1F6B4428006F88BF /* MWLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FAEF4E1F6B4428006F88BF /* MWLinkButton.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		E44240DE1F62E57B00AD9EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E48FE9FC1F8C5A0400C44A42 /* MWBorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWBorderedView.swift; sourceTree = "<group>"; };
 		E4A69D1D1F6F5107004F958D /* MWMarkdownProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWMarkdownProtocol.swift; sourceTree = "<group>"; };
+		E4AF192A1FC5811100129B16 /* MWTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWTextView.swift; sourceTree = "<group>"; };
 		E4C3BB061FBB55E600F16409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4FAEF4E1F6B4428006F88BF /* MWLinkButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWLinkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				E430B2311FB5ECE300F21B05 /* Radio button */,
 				E412C5071F671E1200945A4B /* MWLabel.swift */,
 				E412C5091F671E1200945A4B /* MWTextField.swift */,
+				E4AF192A1FC5811100129B16 /* MWTextView.swift */,
 				E412C50A1F671E1200945A4B /* MWTextFieldBottomBorder.swift */,
 				E412C53A1F6980B600945A4B /* MWViewContainer.swift */,
 				E4FAEF4E1F6B4428006F88BF /* MWLinkButton.swift */,
@@ -246,6 +249,7 @@
 				E412C50F1F671E1200945A4B /* MWDefaultImages.swift in Sources */,
 				E412C50D1F671E1200945A4B /* MWProfile.swift in Sources */,
 				E4A69D1E1F6F5107004F958D /* MWMarkdownProtocol.swift in Sources */,
+				E4AF192B1FC5811100129B16 /* MWTextView.swift in Sources */,
 				E430B2371FB5F77000F21B05 /* MWRadioButton.swift in Sources */,
 				E412C5101F671E1200945A4B /* MWImagesProtocol.swift in Sources */,
 				E412C5151F671E1200945A4B /* UIColor+init.swift in Sources */,
