@@ -76,6 +76,7 @@ open class MWLabel: UILabel {
          if text != nil {
             self.sizeToFit()
          }
+         self.layoutIfNeeded()
       }
    }
 
