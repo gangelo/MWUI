@@ -73,10 +73,14 @@ open class MWLabel: UILabel {
    
    override open var text: String? {
       didSet {
+         /*
          if text != nil {
             self.sizeToFit()
          }
          self.layoutIfNeeded()
+         */
+         self.layoutIfNeeded()
+         self.sizeToFit()
       }
    }
 
